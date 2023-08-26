@@ -30,7 +30,7 @@ fi
 
 
 echo "Start with model ${MODEL_NAME}"
-echo python train.py --load_model $MODEL_NAME --wandb "$WANDB_PROJECT" --proj_dir "${OUTPUT_DIR}" \
+python train.py --load_model $MODEL_NAME --wandb "$WANDB_PROJECT" --proj_dir "${OUTPUT_DIR}" \
 	--data_file "$DATA_FILE" --data_type "binidx" --vocab_size 65536 \
 	--ctx_len 2048 --epoch_steps 1000 --epoch_count 200 --epoch_begin $((COUNTER+1)) --epoch_save 1 \
 	--micro_bsz 1 --n_layer 32 --n_embd 4096 --pre_ffn 0 --head_qk 0 \
