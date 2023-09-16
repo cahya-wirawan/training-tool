@@ -1,2 +1,3 @@
 # Training Tool
-Just a script collection for training
+
+Just a script collection for training.
